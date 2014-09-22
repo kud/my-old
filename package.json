@@ -1,0 +1,11 @@
+{
+  "name": "my-unfortunately",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./run-baby-run.js"
+  },
+  "devDependencies": {
+    "shelljs": "^0.3.0"
+  }
+}
