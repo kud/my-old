@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node ./run-baby-run.js"
+    "start": "node ./core/rocknroll.js"
   },
   "devDependencies": {
     "shelljs": "^0.3.0"

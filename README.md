@@ -2,6 +2,8 @@
 
 ## Install
 
+<img align="right" height="200" src="https://raw.githubusercontent.com/kud/my-unfortunately/master/everybodydancenow.gif">
+
 ### Chocolatey
 
 First of all, install `chocolatey`:
@@ -26,11 +28,11 @@ $ choco install git.install nodejs.install
 
 ## Manual installation
 
-- Wuala
-- Cloudup
-- Lightscreen
-- Firefox nightly
-- Launchy theme "pix_"
+- [Wuala](https://cdn.wuala.com/files/WualaSetup.exe)
+- [Cloudup](https://cloudup.com/download/win)
+- [Lightscreen](https://github.com/ckaiser/Lightscreen/releases/download/v2.0/LightscreenSetup-2.0.exe)
+- [Firefox nightly](http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-35.0a1.en-US.win32.installer.exe)
+- [Launchy theme "pix_"](http://twnsnd.deviantart.com/art/pix-for-launchy-292839328)
 
 ## Usage
 
