@@ -47,7 +47,7 @@ shell.exec('choco install keepass')
 shell.exec('choco install pdfcreator')
 shell.exec('choco install virtuawin')
 
-shell.exec('choco install consolez')
+// shell.exec('choco install consolez')
 shell.exec('choco install clink.install')
 shell.exec('choco install sublimetext3')
 
