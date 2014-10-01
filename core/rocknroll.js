@@ -33,7 +33,6 @@ console.log('\n## Symlinked!')
 /**
  * Install apps
  */
-
 console.log('\n\n## Installing apps...')
 
 shell.exec('choco install ccleaner')
@@ -64,3 +63,15 @@ shell.exec('choco install battle.net')
 
 console.log('\n## Installed!')
 
+/**
+ * Configure computer
+ */
+console.log('\n\n## Configure computer...')
+
+var setItemProperty = 'set-itemproperty -path \\"HKCU:Control Panel\\Desktop\\" -name wallpaper -value \\"D:\\Wuala\\low\\lib\\wallpapers\\DefaultDesktop.jpg\\"'
+
+
+shell.exec('@powershell -NoProfile -ExecutionPolicy unrestricted -Command "' + setItemProperty + '"')
+shell.exec('@powershell -NoProfile -ExecutionPolicy unrestricted -Command "RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters"') // Works itself but not via shell.exec :/
+
+console.log('\n\n## Configured!')
