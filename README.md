@@ -29,7 +29,7 @@ $ choco install git.install nodejs.install
 ## Manual installation
 
 - [Wuala](https://cdn.wuala.com/files/WualaSetup.exe)
-- [ConEmu](https://code.google.com/p/conemu-maximus5/)
+- [Cmder](http://bliker.github.io/cmder/)
 - [Cloudup](https://cloudup.com/download/win)
 - [Lightscreen](https://github.com/ckaiser/Lightscreen/releases/download/v2.0/LightscreenSetup-2.0.exe)
 - [Firefox nightly](http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-35.0a1.en-US.win32.installer.exe)
