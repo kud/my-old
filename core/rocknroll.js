@@ -35,32 +35,39 @@ console.log('\n## Symlinked!')
  */
 console.log('\n\n## Installing apps...')
 
-shell.exec('choco install ccleaner')
-shell.exec('choco install 7zip.install')
-shell.exec('choco install sumatrapdf.install')
-shell.exec('choco install mactype')
-shell.exec('choco install f.lux')
-shell.exec('choco install launchy-beta')
-shell.exec('choco install clamwin')
-shell.exec('choco install keepass')
-shell.exec('choco install pdfcreator')
-shell.exec('choco install virtuawin')
-shell.exec('choco install Clover')
+function install( app ) {
+  shell.exec('choco install ' + app + ' -y')
+  /*shell.exec('choco install ' + app + ' -y -f') // force*/
+}
+
+install('nodejs.install')
+install('git.install')
+install('ccleaner')
+install('7zip.install')
+install('sumatrapdf.install')
+install('mactype')
+install('f.lux')
+install('launchy-beta')
+install('clamwin')
+install('keepass')
+install('pdfcreator')
+install('virtuawin')
+/*shell.exec('choco install Clover')*/
 
 // shell.exec('choco install consolez')
-shell.exec('choco install clink.install')
-shell.exec('choco install sublimetext3')
+install('clink.install')
+install('sublimetext3')
 
-shell.exec('choco install tweetdeck')
-shell.exec('choco install deluge')
-shell.exec('choco install btsync')
-shell.exec('choco install spotify')
-shell.exec('choco install filebot')
-shell.exec('choco install vlc')
+install('tweetdeck')
+install('deluge')
+install('btsync')
+install('spotify')
+install('filebot')
+install('vlc')
 
-shell.exec('choco install steam')
-shell.exec('choco install origin')
-shell.exec('choco install battle.net')
+install('steam')
+install('origin')
+install('battle.net')
 
 console.log('\n## Installed!')
 
