@@ -33,6 +33,7 @@ $ choco install git.install nodejs.install
 - [Lightscreen](https://github.com/ckaiser/Lightscreen/releases/download/v2.0/LightscreenSetup-2.0.exe)
 - [Firefox nightly](http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-35.0a1.en-US.win32.installer.exe)
 - [Launchy theme "pix_"](http://twnsnd.deviantart.com/art/pix-for-launchy-292839328)
+- [French Apple Keyboard Layout](https://github.com/kud/apple-french-keyboard-windows)
 
 ## First time
 
@@ -46,5 +47,9 @@ $ npm install
 ```
 $ npm start
 ```
+
+## Doc
+
+-> [Index](doc/index.md)
 
 
