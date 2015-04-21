@@ -34,6 +34,7 @@ $ choco install git.install nodejs.install
 - [Firefox nightly](http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-35.0a1.en-US.win32.installer.exe)
 - [Launchy theme "pix_"](http://twnsnd.deviantart.com/art/pix-for-launchy-292839328)
 - [French Apple Keyboard Layout](https://github.com/kud/apple-french-keyboard-windows)
+- [Apple Wireless Keyboard](http://uxsoft.cz/projects/apple-wireless-keyboard/)
 
 ## First time
 
