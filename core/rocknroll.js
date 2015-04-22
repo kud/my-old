@@ -1,21 +1,48 @@
-console.log('\n# Run baby, run!')
+console.log('####################')
+console.log('#                  #')
+console.log('#  Run baby, run!  #')
+console.log('#                  #')
+console.log('####################')
 
 /**
  * Import
  */
-var fs    = require('fs')
-var shell = require('shelljs')
+var fs          = require('fs')
+var shell       = require('shelljs')
+
+var cloud       = 'd:\\Wuala\\low\\'
+var homeAppData = process.env.userprofile + '\\'
+var my          = 'd:\\my-unfortunately\\'
+
+/**
+ * Helpers
+ */
+function echoTitle( text ) {
+  console.log('\n----------------------------')
+  console.log('~  ' + text)
+}
+
+function echoSuccess( text ) {
+  console.log('☑  ' + text)
+  console.log('----------------------------')
+}
+
+function echoSpace() {
+  console.log('\n')
+}
+
+function install( app ) {
+  shell.exec('choco install ' + app + ' -y')
+  /*shell.exec('choco install ' + app + ' -y -f') // force*/
+  shell.exec('choco upgrade ' + app + ' -y')
+}
 
 /**
  * Symlink
  */
-console.log('\n\n## Symlinking files...')
+echoTitle('Symlinking files...')
 
-var cloud = 'd:\\Wuala\\low\\'
-var homeAppData = process.env.userprofile + '\\'
-var my = 'd:\\my-unfortunately\\'
-
-
+// sublime text
 if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Installed Packages') ) {
   fs.symlinkSync(cloud + 'appdata\\sublimetext3\\Installed Packages', homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Installed Packages', 'dir')
 }
@@ -24,22 +51,27 @@ if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Packages') 
   fs.symlinkSync(cloud + 'appdata\\sublimetext3\\Packages', homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Packages', 'dir')
 }
 
+// git
 if ( !fs.existsSync(homeAppData + '.gitconfig') ) {
   fs.symlinkSync(my + 'dotfiles\\.gitconfig', homeAppData + '.gitconfig')
 }
 
-console.log('\n## Symlinked!')
+// virtua win
+if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\VirtuaWin\\virtuawin.cfg') ) {
+  fs.symlinkSync(my + 'dotfiles\\virtuawin.cfg', homeAppData + 'AppData\\Roaming\\VirtuaWin\\virtuawin.cfg')
+}
+
+if ( !fs.existsSync(homeAppData+ 'AppData\\Roaming\\VirtuaWin\\window.cfg') ) {
+  fs.symlinkSync(my + 'dotfiles\\window.cfg', homeAppData + 'AppData\\Roaming\\VirtuaWin\\window.cfg')
+}
+
+
+echoSuccess('Files symlinked!')
 
 /**
  * Install apps
  */
-console.log('\n\n## Installing apps...')
-
-function install( app ) {
-  shell.exec('choco install ' + app + ' -y')
-  /*shell.exec('choco install ' + app + ' -y -f') // force*/
-  shell.exec('choco upgrade ' + app + ' -y')
-}
+echoTitle('Installing app...')
 
 install('nodejs.install')
 install('git.install')
@@ -53,9 +85,9 @@ install('clamwin')
 install('keepass')
 install('pdfcreator')
 install('virtuawin')
-/*shell.exec('choco install Clover')*/
+// install('Clover')
 
-// shell.exec('choco install consolez')
+// install('consolez')
 install('clink.install')
 install('sublimetext3')
 
@@ -70,12 +102,12 @@ install('steam')
 install('origin')
 install('battle.net')
 
-console.log('\n## Installed!')
+echoSuccess('App installed!')
 
 /**
  * Configure computer
  */
-console.log('\n\n## Configure computer...')
+echoTitle('Configure computer...')
 
 var setItemProperty = 'set-itemproperty -path \\"HKCU:Control Panel\\Desktop\\" -name wallpaper -value \\"D:\\Wuala\\low\\lib\\wallpapers\\DefaultDesktop.jpg\\"'
 
@@ -83,4 +115,4 @@ var setItemProperty = 'set-itemproperty -path \\"HKCU:Control Panel\\Desktop\\" 
 shell.exec('@powershell -NoProfile -ExecutionPolicy unrestricted -Command "' + setItemProperty + '"')
 shell.exec('@powershell -NoProfile -ExecutionPolicy unrestricted -Command "RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters"') // Works itself but not via shell.exec :/
 
-console.log('\n\n## Configured!')
+echoSuccess('Computer configured!')
