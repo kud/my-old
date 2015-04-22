@@ -38,6 +38,7 @@ console.log('\n\n## Installing apps...')
 function install( app ) {
   shell.exec('choco install ' + app + ' -y')
   /*shell.exec('choco install ' + app + ' -y -f') // force*/
+  shell.exec('choco upgrade ' + app + ' -y')
 }
 
 install('nodejs.install')
