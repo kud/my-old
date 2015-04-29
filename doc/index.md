@@ -1,5 +1,12 @@
 # Index
 
+## Disable recovery mode
+
+```
+bcdedit /set {current} recoveryenabled No
+bcdedit /set {current} bootstatuspolicy ignoreallfailures
+```
+
 ## Exec which must be ignored by MacType because of crash
 
 ```
