@@ -42,6 +42,11 @@ function install( app ) {
  */
 echoTitle('Symlinking files...')
 
+// startup
+if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup') ) {
+  fs.symlinkSync(my + 'startup', homeAppData + 'AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup', 'dir')
+}
+
 // sublime text
 if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Installed Packages') ) {
   fs.symlinkSync(cloud + 'appdata\\sublimetext3\\Installed Packages', homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Installed Packages', 'dir')
