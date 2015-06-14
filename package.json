@@ -6,6 +6,6 @@
     "start": "node ./core/rocknroll.js"
   },
   "devDependencies": {
-    "shelljs": "^0.3.0"
+    "shelljs": "^0.5.1"
   }
 }
