@@ -6,7 +6,7 @@ Add `my-unfortunately/bin` in PATH.
 
 ## SSH
 
-Start `start-ssh-agent`.
+Start `start-ssh-agent` not to have passphrase to enter anymore.
 
 ## Disable recovery mode
 
