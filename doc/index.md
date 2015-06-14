@@ -1,5 +1,13 @@
 # Index
 
+## PATH
+
+Add `my-unfortunately/bin` in PATH.
+
+## SSH
+
+Start `start-ssh-agent`.
+
 ## Disable recovery mode
 
 ```
