@@ -14,4 +14,8 @@ var setItemProperty = 'set-itemproperty -path \\"HKCU:Control Panel\\Desktop\\" 
 shell.exec('@powershell -NoProfile -ExecutionPolicy unrestricted -Command "' + setItemProperty + '"')
 shell.exec('@powershell -NoProfile -ExecutionPolicy unrestricted -Command "RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters"') // Works itself but not via shell.exec :/
 
+// import aliases
+var aliasesFile = my + '\\settings\\aliases'
+shell.exec('@powershell -NoProfile -ExecutionPolicy unrestricted -Command "doskey /macrofile=' + aliasesFile + '"')
+
 helper.echoSuccess('Computer set!')

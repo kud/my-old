@@ -1,0 +1,8 @@
+ls=ls --color $*
+pwd=cd
+lsa=ls -lah
+l=ls -la
+ll=ls -l
+la=ls -lap
+md=mkdir
+s=subl .

@@ -1,11 +1,7 @@
 {
   "name": "my-unfortunately",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./core/rocknroll.js"
-  },
   "devDependencies": {
-    "shelljs": "^0.5.1"
+    "shelljs": "0.5.1"
   }
 }
