@@ -1,8 +1,19 @@
 ls=ls --color $*
+lsa=ls -lah $*
+l=ls -la $*
+ll=ls -l $*
+la=ls -lap $*
+
+md=mkdir $*
+cp=cp -v $*
+mv=mv -v $*
+rm=rm -i $*
+
 pwd=cd
-lsa=ls -lah
-l=ls -la
-ll=ls -l
-la=ls -lap
-md=mkdir
+
+open=explorer $*
+
 s=subl .
+
+ifconfig=ipconfig $*
+traceroute=tracert $*

@@ -28,7 +28,7 @@ helper.install('clink.install')
 helper.install('sublimetext3')
 
 helper.install('tweetdeck')
-helper.helper.install('deluge')
+helper.install('deluge')
 helper.install('btsync')
 helper.install('spotify')
 helper.install('filebot')
@@ -36,6 +36,6 @@ helper.install('vlc')
 
 helper.install('steam')
 helper.install('origin')
-helper.install('battle.net')
+/*helper.install('battle.net')*/
 
 helper.echoSuccess('App installed!')

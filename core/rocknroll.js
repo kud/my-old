@@ -5,5 +5,5 @@ console.log('#                  #')
 console.log('####################')
 
 require('./symlink')
-require('./apps')
+require('./app')
 require('./settings')
