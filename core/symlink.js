@@ -1,9 +1,9 @@
 var fs          = require('fs')
 var shell       = require('shelljs')
 
-var cloud       = 'd:\\Wuala\\low\\'
-var homeAppData = process.env.userprofile + '\\'
-var my          = 'd:\\my-unfortunately\\'
+var cloud        = 'd:\\Wuala\\low\\'
+var homeAppData  = process.env.userprofile + '\\'
+var my           = 'd:\\my-unfortunately\\'
 
 var helper      = require('./helper')
 
@@ -33,13 +33,18 @@ if ( !fs.existsSync(homeAppData + '.vimrc') ) {
   fs.symlinkSync(my + 'dotfiles\\.vimrc', homeAppData + '.vimrc')
 }
 
+// cmder
+/*if ( !fs.existsSync('c:\\Appplications\\cmder\\config\\aliases') ) {
+  fs.symlinkSync(my + 'dotfiles\\cmder\\aliases', 'c:\\Appplications\\cmder\\config\\aliases')
+}*/
+
 // virtua win
 if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\VirtuaWin\\virtuawin.cfg') ) {
-  fs.symlinkSync(my + 'dotfiles\\virtuawin.cfg', homeAppData + 'AppData\\Roaming\\VirtuaWin\\virtuawin.cfg')
+  fs.symlinkSync(my + 'dotfiles\\virtuawin\\virtuawin.cfg', homeAppData + 'AppData\\Roaming\\VirtuaWin\\virtuawin.cfg')
 }
 
 if ( !fs.existsSync(homeAppData+ 'AppData\\Roaming\\VirtuaWin\\window.cfg') ) {
-  fs.symlinkSync(my + 'dotfiles\\window.cfg', homeAppData + 'AppData\\Roaming\\VirtuaWin\\window.cfg')
+  fs.symlinkSync(my + 'dotfiles\\virtuawin\\window.cfg', homeAppData + 'AppData\\Roaming\\VirtuaWin\\window.cfg')
 }
 
 helper.echoSuccess('Files symlinked!')

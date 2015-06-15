@@ -24,7 +24,7 @@ helper.install('virtuawin')
 // install('Clover')
 
 // install('consolez')
-helper.install('clink.install')
+/*helper.install('clink.install')*/
 helper.install('sublimetext3')
 
 helper.install('tweetdeck')
