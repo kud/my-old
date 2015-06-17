@@ -1,50 +1,60 @@
-var fs          = require('fs')
-var shell       = require('shelljs')
+var fs    = require('fs')
+var shell = require('shelljs')
+var h     = require('./helper')
 
-var cloud        = 'd:\\Wuala\\low\\'
-var homeAppData  = process.env.userprofile + '\\'
-var my           = 'd:\\my-unfortunately\\'
+function symLink( opts ) {
+  if ( !fs.existsSync( opts.dest ) ) {
+    fs.symlinkSync(opts.src, opts.dest, opts.type)
+  }
+}
 
-var helper      = require('./helper')
-
-helper.echoTitle('Symlinking files...')
+h.echoTitle('Symlinking files...')
 
 // startup
-if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup') ) {
-  fs.symlinkSync(my + 'startup', homeAppData + 'AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup', 'dir')
-}
+symLink({
+  src: h.my + 'startup',
+  dest: h.homeAppData + 'AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup',
+  type: 'dir'
+})
 
 // sublime text
-if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Installed Packages') ) {
-  fs.symlinkSync(cloud + 'appdata\\sublimetext3\\Installed Packages', homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Installed Packages', 'dir')
-}
+symLink({
+  src: h.cloud + 'appdata\\sublimetext3\\Packages',
+  dest: h.homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Packages',
+  type: 'dir'
+})
 
-if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Packages') ) {
-  fs.symlinkSync(cloud + 'appdata\\sublimetext3\\Packages', homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Packages', 'dir')
-}
+symLink({
+  src: h.cloud + 'appdata\\sublimetext3\\Installed Packages',
+  dest: h.homeAppData + 'AppData\\Roaming\\Sublime Text 3\\Installed Packages',
+  type: 'dir'
+})
 
 // git
-if ( !fs.existsSync(homeAppData + '.gitconfig') ) {
-  fs.symlinkSync(my + 'dotfiles\\.gitconfig', homeAppData + '.gitconfig')
-}
+symLink({
+  src: h.my + 'dotfiles\\.gitconfig',
+  dest: h.homeAppData + '.gitconfig',
+  type: 'file'
+})
 
 // vim
-if ( !fs.existsSync(homeAppData + '.vimrc') ) {
-  fs.symlinkSync(my + 'dotfiles\\.vimrc', homeAppData + '.vimrc')
-}
-
-// cmder
-/*if ( !fs.existsSync('c:\\Appplications\\cmder\\config\\aliases') ) {
-  fs.symlinkSync(my + 'dotfiles\\cmder\\aliases', 'c:\\Appplications\\cmder\\config\\aliases')
-}*/
+symLink({
+  src: h.my + 'dotfiles\\.vimrc',
+  dest: h.homeAppData + '.vimrc',
+  type: 'file'
+})
 
 // virtua win
-if ( !fs.existsSync(homeAppData + 'AppData\\Roaming\\VirtuaWin\\virtuawin.cfg') ) {
-  fs.symlinkSync(my + 'dotfiles\\virtuawin\\virtuawin.cfg', homeAppData + 'AppData\\Roaming\\VirtuaWin\\virtuawin.cfg')
-}
+symLink({
+  src: h.my + 'dotfiles\\virtuawin\\virtuawin.cfg',
+  dest: h.homeAppData + 'AppData\\Roaming\\VirtuaWin\\virtuawin.cfg',
+  type: 'file'
+})
 
-if ( !fs.existsSync(homeAppData+ 'AppData\\Roaming\\VirtuaWin\\window.cfg') ) {
-  fs.symlinkSync(my + 'dotfiles\\virtuawin\\window.cfg', homeAppData + 'AppData\\Roaming\\VirtuaWin\\window.cfg')
-}
+symLink({
+  src: h.my + 'dotfiles\\virtuawin\\window.cfg',
+  dest: h.homeAppData+ 'AppData\\Roaming\\VirtuaWin\\window.cfg',
+  type: 'file'
+})
 
-helper.echoSuccess('Files symlinked!')
+h.echoSuccess('Files symlinked!')
