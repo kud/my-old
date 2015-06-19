@@ -57,4 +57,11 @@ symLink({
   type: 'file'
 })
 
+// cmder
+symLink({
+  src: h.cloud + 'appdata\\cmder\\config',
+  dest: 'C:\\Applications\\cmder\\config',
+  type: 'dir'
+})
+
 h.echoSuccess('Files symlinked!')

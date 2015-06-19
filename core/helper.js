@@ -2,9 +2,9 @@ var shell = require('shelljs')
 
 module.exports = {
 
-  cloud: 'd:\\Wuala\\low\\'
-  homeAppData: process.env.userprofile + '\\'
-  my: 'd:\\my-unfortunately\\'
+  cloud: 'd:\\Wuala\\low\\',
+  homeAppData: process.env.userprofile + '\\',
+  my: 'd:\\my-unfortunately\\',
 
   echoTitle: function( text ) {
     console.log('~  ' + text)

@@ -47,7 +47,12 @@
   rewrite-history    = "!git rebase -i $(git merge-base master HEAD)"
   finalise           = "!git rebase-from-master && git rewrite-history"
   cleanup            = "!git remote prune origin && git repack && git gc"
+  lazy               = "!git add . && git commit -m 'Some updates.' && git push"
 [branch]
   autosetuprebase = always
+[github]
+  user = kud
+[fetch]
+  prune = true
 [include]
   path = .gitconfig_local
