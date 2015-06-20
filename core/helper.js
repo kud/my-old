@@ -11,7 +11,7 @@ module.exports = {
   },
 
   echoSuccess: function( text ) {
-    console.log('☑  ' + text)
+    console.log('√  ' + text)
   },
 
   echoFail: function( text ) {

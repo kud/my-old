@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "devDependencies": {
     "shelljs": "0.5.1"
+  },
+  "dependencies": {
+    "yargs": "^3.12.0"
   }
 }

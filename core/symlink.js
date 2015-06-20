@@ -1,5 +1,4 @@
 var fs    = require('fs')
-var shell = require('shelljs')
 var h     = require('./helper')
 
 function symLink( opts ) {
