@@ -52,7 +52,7 @@ symLink({
 
 symLink({
   src: h.my + 'dotfiles\\virtuawin\\window.cfg',
-  dest: h.homeAppData+ 'AppData\\Roaming\\VirtuaWin\\window.cfg',
+  dest: h.homeAppData + 'AppData\\Roaming\\VirtuaWin\\window.cfg',
   type: 'file'
 })
 

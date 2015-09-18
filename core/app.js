@@ -25,7 +25,7 @@ chocoInstall('exiftool')
 chocoInstall('sublimetext3')
 chocoInstall('tweetdeck')
 chocoInstall('deluge')
-chocoInstall('btsync')
+/*chocoInstall('btsync')*/
 chocoInstall('spotify')
 chocoInstall('filebot')
 chocoInstall('vlc')

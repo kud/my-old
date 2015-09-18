@@ -2,7 +2,7 @@ var shell = require('shelljs')
 
 module.exports = {
 
-  cloud: 'd:\\Wuala\\low\\',
+  cloud: 'd:\\Sync\\low\\',
   homeAppData: process.env.userprofile + '\\',
   my: 'd:\\my-unfortunately\\',
 
