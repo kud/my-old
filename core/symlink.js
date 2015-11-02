@@ -63,4 +63,12 @@ symLink({
   type: 'dir'
 })
 
+// Sync
+symLink({
+  src: 'E:\\Documents',
+  dest: 'D:\\Sync\\documents',
+  type: 'dir'
+})
+
+
 h.echoSuccess('Files symlinked!')
