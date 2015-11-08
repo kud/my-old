@@ -23,9 +23,11 @@ chocoInstall('pdfcreator')
 chocoInstall('virtuawin')
 chocoInstall('exiftool')
 chocoInstall('sublimetext3')
-chocoInstall('tweetdeck')
+/*chocoInstall('tweetdeck')*/
 chocoInstall('deluge')
+chocoInstall('ultradefrag')
 /*chocoInstall('btsync')*/
+
 chocoInstall('spotify')
 chocoInstall('filebot')
 chocoInstall('vlc')
