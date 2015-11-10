@@ -28,7 +28,7 @@ $ choco install git.install nodejs.install
 
 ## Manual installation
 
-- [Wuala](https://cdn.wuala.com/files/WualaSetup.exe)
+- [Sync](https://www.sync.com/download/win/sync-installer.exe)
 - [Cmder](http://bliker.github.io/cmder/)
 - [Lightscreen](https://github.com/ckaiser/Lightscreen/releases/download/v2.0/LightscreenSetup-2.0.exe)
 - [Firefox nightly](http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-35.0a1.en-US.win32.installer.exe)
