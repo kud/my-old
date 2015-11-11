@@ -45,7 +45,7 @@ $ npm install
 ## Usage
 
 ```
-$ npm start
+$ £ bam
 ```
 
 ## Doc
