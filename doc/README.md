@@ -41,6 +41,23 @@ D:/my-unfortunately/shortcuts
 
 - Theme: [Launchy theme "pix_"](http://twnsnd.deviantart.com/art/pix-for-launchy-292839328)
 
-## Useful but not used apps
+## Firefox
 
-- [Cloudup](https://cloudup.com/download/win)
+Add this to `prefs.js` in the profile (`C:\Users\xxx\AppData\Roaming\Mozilla\Firefox\Profiles\xxx.default`) when firefox is off:
+
+```
+user_pref("general.warnOnAboutConfig", false);
+user_pref("mousewheel.with_meta.action", 0);
+user_pref("browser.startup.homepage", "https://raindrop.io/app#/dashboard");
+user_pref("browser.pocket.enabled", false);
+user_pref("browser.pocket.useLocaleList", false);
+user_pref("browser.toolbarbuttons.introduced.pocket-button", false);
+user_pref("devtools.webide.widget.enabled", true);
+user_pref("devtools.chrome.enabled ", true);
+user_pref("devtools.debugger.remote-enabled", true);
+user_pref("devtools.command-button-responsive.enabled", false);
+user_pref("devtools.command-button-splitconsole.enabled", false);
+user_pref("devtools.command-button-eyedropper.enabled", true);
+user_pref("devtools.toolbox.host", "side");
+user_pref("services.sync.client.name", "_kud.home");
+```

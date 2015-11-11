@@ -1,6 +1,9 @@
 var fs    = require('fs')
 var h     = require('./helper')
 
+/**
+ * type: dir, file
+ */
 function symLink( opts ) {
   if ( !fs.existsSync( opts.dest ) ) {
     fs.symlinkSync(opts.src, opts.dest, opts.type)

@@ -30,6 +30,7 @@ $ choco install git.install nodejs.install
 
 - [Sync](https://www.sync.com/download/win/sync-installer.exe)
 - [Cmder](http://bliker.github.io/cmder/)
+- [Cloudup](https://cloudup.com/download/win)
 - [Lightscreen](https://github.com/ckaiser/Lightscreen/releases/download/v2.0/LightscreenSetup-2.0.exe)
 - [Firefox nightly](http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-35.0a1.en-US.win32.installer.exe)
 - [French Apple Keyboard Layout](https://github.com/kud/apple-french-keyboard-windows)
@@ -40,7 +41,6 @@ $ choco install git.install nodejs.install
 ```
 $ npm install
 ```
-
 
 ## Usage
 
