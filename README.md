@@ -50,6 +50,6 @@ $ npm start
 
 ## Doc
 
--> [Index](doc/index.md)
+⪧ [Index](doc/README.md)
 
 
