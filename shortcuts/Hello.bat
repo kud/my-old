@@ -1,3 +1,5 @@
 START "" "C:\Program Files (x86)\Nightly\firefox.exe"
 START "" "C:\Users\Kud\AppData\Roaming\Spotify\Spotify.exe"
+START "" "C:\Program Files\Sublime Text 3\sublime_text.exe"
+START "" "D:\my-unfortunately\shortcuts\Cmder.vbs"
 ::START "" "C:\Program Files (x86)\Twitter\TweetDeck\TweetDeck.exe"
