@@ -73,5 +73,12 @@ symLink({
   type: 'dir'
 })
 
+// lightroom
+symLink({
+  src: h.cloud + 'appdata\\lightroom\\Develop Presets',
+  dest: h.homeAppData + 'AppData\\Roaming\\Adobe\\Lightroom\\Develop Presets',
+  type: 'dir'
+})
+
 
 h.echoSuccess('Files symlinked!')
