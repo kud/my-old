@@ -3,7 +3,6 @@ var h     = require('./helper')
 
 function chocoInstall( app ) {
   shell.exec('choco install ' + app + ' -y')
-  /*shell.exec('choco install ' + app + ' -y -f') // force*/
   shell.exec('choco upgrade ' + app + ' -y')
 }
 
@@ -23,10 +22,8 @@ chocoInstall('pdfcreator')
 chocoInstall('virtuawin')
 chocoInstall('exiftool')
 chocoInstall('sublimetext3')
-/*chocoInstall('tweetdeck')*/
 chocoInstall('deluge')
 chocoInstall('ultradefrag')
-/*chocoInstall('btsync')*/
 
 chocoInstall('spotify')
 chocoInstall('filebot')

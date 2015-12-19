@@ -7,7 +7,7 @@ var npmInstall = function( app ) {
 
 h.echoTitle('Installing commands...')
 
-shell.exec('npm update -g')
+shell.exec('npm install -g')
 
 npmInstall('imagemin')
 npmInstall('npm-check-updates')
