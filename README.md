@@ -14,7 +14,7 @@ First of all, install `chocolatey`:
 
 There, insert:
 
-```
+```console
 $ @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 ```
 
@@ -22,7 +22,7 @@ $ @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-objec
 
 Some of chocolatey packages must be installed first to make the main script work.
 
-```
+```console
 $ choco install git.install nodejs.install
 ```
 
@@ -31,25 +31,23 @@ $ choco install git.install nodejs.install
 - [Sync](https://www.sync.com/download/win/sync-installer.exe)
 - [Cmder (forked)](https://github.com/Stanzilla/cmder)
 - [Cloudup](https://cloudup.com/download/win)
-- [Lightscreen](https://github.com/ckaiser/Lightscreen/releases/download/v2.0/LightscreenSetup-2.0.exe)
-- [Firefox Nightly](http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-trunk/firefox-35.0a1.en-US.win32.installer.exe)
+- [Lightscreen](https://github.com/ckaiser/Lightscreen/releases)
+- [Firefox Nightly](https://nightly.mozilla.org/)
 - [French Apple Keyboard Layout](https://github.com/kud/apple-french-keyboard-windows)
 - [Apple Wireless Keyboard](http://uxsoft.cz/projects/apple-wireless-keyboard/)
 
 ## First time
 
-```
+```console
 $ npm install
 ```
 
 ## Usage
 
-```
+```console
 $ £ bam
 ```
 
-## Doc
-
-⪧ [Index](doc/README.md)
+## [Doc](doc/README.md)
 
 
