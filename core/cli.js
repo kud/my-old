@@ -12,6 +12,7 @@ shell.exec('npm install -g')
 npmInstall('imagemin')
 npmInstall('npm-check-updates')
 npmInstall('markdown-live')
+npmInstall('speed-test')
 npmInstall('gulp')
 
 h.echoSuccess('Commands installed!')
