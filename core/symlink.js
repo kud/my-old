@@ -67,9 +67,15 @@ symLink({
 })
 
 // Sync
-symLink({
+/*symLink({
   src: 'E:\\Documents',
-  dest: 'D:\\Sync\\documents',
+  dest: 'D:\\Sync\\backup\\documents',
+  type: 'dir'
+})*/
+
+symLink({
+  src: 'E:\\',
+  dest: 'D:\\Sync\\backup',
   type: 'dir'
 })
 
@@ -79,6 +85,5 @@ symLink({
   dest: h.homeAppData + 'AppData\\Roaming\\Adobe\\Lightroom\\Develop Presets',
   type: 'dir'
 })
-
 
 h.echoSuccess('Files symlinked!')
