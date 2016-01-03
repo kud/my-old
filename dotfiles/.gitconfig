@@ -43,7 +43,7 @@
   export             = "!git clone --depth 1 $1 && rm -rf \"$(basename $1 .git)/.git\" -"
   branches           = branch -avv
   wip                = "!git add . && git commit -m 'WIP'"
-  rebase-from-master = "!git co master && git pull && git co - && git rebase master"
+  refresh            = "!git co master && git pull && git co - && git rebase master"
   rewrite-history    = "!git rebase -i $(git merge-base master HEAD)"
   finalise           = "!git rebase-from-master && git rewrite-history"
   cleanup            = "!git remote prune origin && git repack && git gc"
