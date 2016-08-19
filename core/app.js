@@ -28,7 +28,7 @@ chocoInstall('ultradefrag')
 
 chocoInstall('spotify')
 chocoInstall('filebot')
-chocoInstall('vlc')
+/*chocoInstall('vlc')*/ /* not updated enough */
 
 chocoInstall('steam')
 chocoInstall('origin')
