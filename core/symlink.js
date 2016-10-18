@@ -74,7 +74,7 @@ symLink({
 })*/
 
 symLink({
-  src: 'E:\\',
+  src: 'F:\\#Sync',
   dest: 'D:\\Sync\\backup',
   type: 'dir'
 })
