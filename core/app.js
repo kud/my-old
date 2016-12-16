@@ -10,6 +10,7 @@ h.echoTitle('Installing app...')
 
 chocoInstall('nodejs.install')
 chocoInstall('git.install')
+chocoInstall('make')
 chocoInstall('python')
 chocoInstall('ccleaner')
 chocoInstall('7zip.install')
