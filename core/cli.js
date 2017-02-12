@@ -9,7 +9,7 @@ h.echoTitle('Installing commands...')
 
 shell.exec('npm install -g')
 
-npmInstall('imagemin')
+npmInstall('imagemin-cli')
 npmInstall('npm-check-updates')
 npmInstall('markdown-live')
 npmInstall('speed-test')
