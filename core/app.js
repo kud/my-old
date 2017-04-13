@@ -23,7 +23,7 @@ chocoInstall('keepass')
 chocoInstall('pdfcreator')
 chocoInstall('virtuawin')
 chocoInstall('exiftool')
-chocoInstall('sublimetext3')
+/*chocoInstall('sublimetext3')*/
 chocoInstall('deluge')
 chocoInstall('ultradefrag')
 
