@@ -26,7 +26,7 @@ Some of chocolatey packages must be installed first to make the main script work
 $ choco install git.install nodejs.install
 ```
 
-## Manual installation
+### Manual installation
 
 - [Sync](https://www.sync.com/download/win/sync-installer.exe)
 - [Cmder (forked)](https://github.com/Stanzilla/cmder)

@@ -26,6 +26,7 @@ chocoInstall('exiftool')
 /*chocoInstall('sublimetext3')*/
 chocoInstall('deluge')
 chocoInstall('ultradefrag')
+chocoInstall('FileOptimizer')
 
 chocoInstall('spotify')
 chocoInstall('filebot')
