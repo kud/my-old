@@ -30,7 +30,7 @@ chocoInstall('FileOptimizer')
 
 chocoInstall('spotify')
 chocoInstall('filebot')
-/*chocoInstall('vlc')*/ /* not updated enough */
+chocoInstall('vlc-nightly')
 
 chocoInstall('steam')
 chocoInstall('origin')

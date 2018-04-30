@@ -1,5 +1,16 @@
 # postinstall
 
+## Manual install
+
+- [Sync](https://www.sync.com/download/win/sync-installer.exe)
+- [Cmder (forked)](https://github.com/Stanzilla/cmder)
+- [Cloudup](https://cloudup.com/download/win)
+- [Lightscreen](https://github.com/ckaiser/Lightscreen/releases)
+- [Firefox Nightly](https://nightly.mozilla.org/)
+- [French Apple Keyboard Layout](https://github.com/kud/apple-french-keyboard-windows)
+- [Apple Wireless Keyboard](http://uxsoft.cz/projects/apple-wireless-keyboard/)
+- [Seer](https://sourceforge.net/projects/ccseer/)
+
 ## PATH
 
 Add `my-unfortunately/bin` in PATH.

@@ -7,12 +7,12 @@ var npmInstall = function( app ) {
 
 h.echoTitle('Installing commands...')
 
-shell.exec('npm install -g')
+shell.exec('npm i -g npm')
 
 npmInstall('imagemin-cli')
 npmInstall('npm-check-updates')
 npmInstall('markdown-live')
 npmInstall('speed-test')
-npmInstall('gulp')
+npmInstall('http-server')
 
 h.echoSuccess('Commands installed!')
